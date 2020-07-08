@@ -1,2 +1,24 @@
 本文罗列面试数据岗位可能会被问到的专业问题：
-1. 
+1. Pyspark与python的区别
+2. python常见操作，见平时总结
+3. SAS基础知识
+4. Xgboost的特点/优点
+5. lightgbm的特点/优点
+6. lightgbm与xgboost的不同
+7. 卷积神经网络的各层、损失函数、优化器
+8. 异常点outlier举例
+9. 如何处理异常点
+10. unbalanced data 举例
+11. 如何处理不均衡数据
+12. 缺失数据处理
+13. 特征筛选的方法与优劣
+14. 调参方法(Grid search)
+15. 分类模型评估(ks,auc,roc,frp,trp,f1, accuracy，lift)
+16. 回归模型评估
+17. A/B testing的步骤
+18. A/B testing如何确定样本量
+19. 蒙特卡洛模拟的方法与应用
+20. 评分卡的大体步骤
+21. 评分卡的IV、WOE、逻辑回归
+22. 过拟合的判断与处理
+23. 每个软件掌握的功能与实现的项目

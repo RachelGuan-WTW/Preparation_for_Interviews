@@ -2,7 +2,7 @@
 
 ### 通用技术问题：
 每个软件可以实现的功能，尤其是tensorflow与pySpark
-1. Pyspark的应用场景（被平台逼着用pyspark,并未思考过，为何一定要用pyspark?）
+1. Pyspark的应用场景（被平台逼着用pyspark,但是我并未思考过，为何一定要用pyspark?）
 2. python常见操作，见平时总结
 3. Sql常见操作，见平时总结
 

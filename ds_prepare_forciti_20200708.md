@@ -1,13 +1,31 @@
 # 本文罗列数据岗位可能会被问到的专业问题：
 
+面试时，需要特别注意组织答案（金字塔型）
+
 ### 通用技术问题(数据分析人员的语言)：
 每个软件可以实现的功能，尤其是tensorflow与pySpark
 1. Pyspark的应用场景（被平台逼着用pyspark,但是我并未思考过，为何一定要用pyspark?）
-   - 方便地操作大数据集进行模型预测
-   我司采用了spark作为集群计算环境，pyspark是spark为python用户提供的API语言。
+
+主要是方便地操作spark下的大数据集：
+- 方便地操作大数据集进行模型预测，不必担心挤爆机器学习平台（大数据操作优势，相当于普通的python）
+- 方便地进行循环迭代操作（python优势，相比于sql）
+
+另外，关于spark:
+- spark是一种类似于hadoop的开源集群计算环境，为Python用户提供了pyspark作为API语言，也支持sqld等
+- spark是由scala语言实现的
+- spark可以更快，原因是分布式数据集、优化迭代工作负载、
    
 2. python常见操作，见平时总结
+- 数据读入（pd.read_csv,删除drop,重命名列rename，转置.T）
+- 创建pandas(dict转化，创建空pandas然后append)
+- 数据探索(去重-drop_duplicates,字段类型-dtypes,某列值分布-value_counts,空值判断处理-isna)
+- 数据处理（pd.merge, append,pd.concat,排序sort_values, 分组groupby,定义函数并调用）
+- 其他处理（时间包datetime,机器学习常用sklearn）
+
 3. Sql常见操作，见平时总结
+- 条件筛选（模糊匹配）
+- 连接（union, join）
+- 截取字段（substr, left, right, position）
 
 
 4. Xgboost的特点/优点（与GBDT的的联系与区别）
@@ -24,7 +42,7 @@
 12. 缺失数据处理
 13. 特征筛选的各种方法与优劣
 14. 调参方法(Grid search，贝叶斯优化算法)
-15. 分类模型评估的定义、优缺点(ks,auc,roc,precison,recall,f1, accuracy，lift)
+15. 分类模型评估的定义、优缺点(ks,auc,roc,precison,recall,f1, accuracy，lift)，以欺诈场景为例
  - 
 16. 回归模型评估
  - R方

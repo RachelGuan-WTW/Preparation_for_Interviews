@@ -3,6 +3,7 @@
 ### 通用技术问题：
 每个软件可以实现的功能，尤其是tensorflow与pySpark
 1. Pyspark的应用场景（被平台逼着用pyspark,但是我并未思考过，为何一定要用pyspark?）
+   我司采用了spark作为集群计算环境，pyspark是spark提供的python API接口语言。
 2. python常见操作，见平时总结
 3. Sql常见操作，见平时总结
 

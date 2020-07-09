@@ -43,7 +43,7 @@
 13. 特征筛选的各种方法与优劣
 14. 调参方法(Grid search，贝叶斯优化算法)
 15. 分类模型评估的定义、优缺点(ks,auc,roc,precison,recall,f1, accuracy，lift)，以欺诈场景为例
- - 
+ - [网址](https://www.6aiq.com/article/1549986548173)有详细的介绍
 16. 回归模型评估
  - R方
  - explained variance score

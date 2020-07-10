@@ -26,25 +26,35 @@
 - 条件筛选（模糊匹配）
 - 连接（union, join）
 - 截取字段（substr, left, right, position）
+- 分组（partition）
 
+8. 异常点outlier举例
+outlier分为错误值和因为特殊情景而产生的特殊情况。
+- 我平时接触到的异常点，通常指的是业务逻辑异常的值，比如年龄出现负值，或者大于200的值。对应的处理方法就是，较少，则直接删除；多，就要追查原因，然后修正处理。
+- 因为特殊情景而产生的特殊情况。
+
+- 可以使用算法[isolatedForest](https://www.cnblogs.com/gczr/p/10354646.html)、聚类分析、正态分布分析（超过均值3个方差）来识别，但我日常工作中还没有使用过
+9. 如何检测处理异常点
+
+10. unbalanced data 举例，以及对于模型的影响
+11. 如何处理不均衡数据
+最主要的思想就是改变不均衡数据的比例。
+  - 上采样
+  - 下采样
+  - SMOTE
+12. 缺失数据处理
 
 4. Xgboost的特点/优点（与GBDT的的联系与区别）
 5. lightgbm的特点/优点（与XGBOOST的联系与区别）
 6. lightgbm与xgboost的不同
 7. 
-8. 异常点outlier举例
-9. 如何处理异常点
-10. unbalanced data 举例
-11. 如何处理不均衡数据
-  - 上采样
-  - 下采样
-  - SMOTE
-12. 缺失数据处理
 13. 特征筛选的各种方法与优劣
 14. 调参方法(Grid search，贝叶斯优化算法)
-15. 分类模型评估的定义、优缺点(ks,auc,roc,precison,recall,f1, accuracy，lift)，以欺诈场景为例
- - [网址](https://www.6aiq.com/article/1549986548173)有详细的介绍
-16. 回归模型评估
+15. 分类模型评估指标的定义、优缺点(accuracy,precison,recall,f1, p-r curve; tpr,fpr,roc,auc;ks)，以欺诈场景为例
+ - [网址](https://www.6aiq.com/article/1549986548173)有详细的介绍accuracy,precison,recall,f1, p-r curve; tpr,fpr,roc,auc
+ - ks的解释可以见[网址](https://www.cnblogs.com/gczr/p/10354646.html)
+ 
+16. 回归模型评估指标
  - R方
  - explained variance score
  - mean absolute error

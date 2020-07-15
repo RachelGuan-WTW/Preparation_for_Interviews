@@ -201,9 +201,23 @@ GBDT的优点/缺点：
 | 3  | EFB\(Exclusive feature bundle\) bundles mutually exclusive features                      | All features                              |
 | 4  | Leaf\-wise tree growth                                                                   | level\-wise tree growth                   |
 
-
-
 60. xgboost调参与lightgbm调参步骤
+xgboost与lightgbm的参数，大同小异。
+特别不同的是，lightgbm是leaf-wise tree growth,因此仅限制树的深度是不够的，还要可以调整叶的数量
+
+lightgbm需要调整的参数：
+- 叶数量，树的深度
+- 每个叶的最小数据量
+- 每个特征的最大分箱数量，每个分箱的最小数据量
+- 最大运行次数，以及结果在多少次没有优化而暂停的轮数
+- 每次使用的特征比例
+- 使用的部分数据比例：可以每次使用bagging-fraction的数据，也可以bagging-freq次使用bagging-fraction的数据：This sampling can be done for each tree (i.e. each iteration) or after each bagging_freq trees have been trained.
+- 学习率
+
+
+其他需要设置的参数：
+- 目标：回归，还是分类
+- boosting-type选用dart或者gbdt
 
 61. 卷积神经网络的损失函数
 62. 卷积神经网络的优化器

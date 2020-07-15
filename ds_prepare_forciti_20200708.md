@@ -189,11 +189,17 @@ GBDT的优点/缺点：
 | 2  | 代价函数求解是二阶泰勒展示，涉及二阶和一阶导数                                      | 仅涉及一阶导数                        |
 | 3  | 每个迭代结果有shrinkage rate                                        | NA                             |
 | 4  | 每次迭代会对feature进行抽样，而非使用全部数据                                   | 使用全部数据                         |
-| 5  | 每个决策树结点采用basic exact greedy algorithm\+buckets split（支持权重数据） | 仅有basic exact greedy algorithm |
+| 5  | 每个决策树结点采用basic exact greedy algorithm+histogram-based algorithm（支持权重数据） | 仅有basic exact greedy algorithm |
 | 6  | sparse data处理（missing data, 0s, one\-hot）                    | 在稀疏数据上效果不佳                     |
 
 59. lightgbm的特点/优点（与XGBOOST的联系与区别）
 
+| no | lightgbm\(基于xgboost的优化，更擅长处理多特征，大数据\)                                                    | xgboost                    |
+|----|------------------------------------------------------------------------------------------|-------------------------------------------|
+| 1  | histogram\_based algorithm in finding the best split points                              | also supports histogram\_based\_algorithm |
+| 2  | GOSS\(gradient\_based one\_sided sampling\) excludes data instances with samll gradients | All data instances                        |
+| 3  | EFB\(Exclusive feature bundle\) bundles mutually exclusive features                      | All features                              |
+| 4  | Leaf\-wise tree growth                                                                   | level\-wise tree growth                   |
 
 
 

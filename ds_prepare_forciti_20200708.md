@@ -5,7 +5,8 @@
 ### 通用技术问题(数据分析人员的语言)：
 ------------------------------------------------------------------------------------
 
-每个软件可以实现的功能，尤其是tensorflow与pySpark
+下面是每个软件可以实现的功能，尤其是tensorflow与pySpark
+
 11. Pyspark的应用场景（被平台逼着用pyspark,但是我并未思考过，为何一定要用pyspark?）
 
 主要是方便地操作spark下的大数据集：
@@ -13,7 +14,7 @@
 - 方便地进行循环迭代操作（python优势，相比于sql）
 
 另外，关于spark:
-- spark是一种类似于hadoop的开源集群计算环境，为Python用户提供了pyspark作为API语言，也支持sqld等
+- spark是一种类似于hadoop的开源集群计算环境，为Python用户提供了pyspark作为API语言，也支持sql等
 - spark是由scala语言实现的
 - spark可以更快，原因是分布式数据集、优化迭代工作负载、
    

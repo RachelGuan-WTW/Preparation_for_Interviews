@@ -12,10 +12,10 @@
 后面几种，都要基于分词和转化为词向量word Embedding。</br>
 中文分词使用jieba。注意snownlp也可以分词，并且可以判断话语的褒贬程度</br>
 词向量可以使用[gensim](https://radimrehurek.com/gensim/models/word2vec.html).
-  from gensim.test.utils import common_texts
-  from gensim.models import Word2Vec
-  model = Word2Vec(sentences=common_texts, vector_size=100, window=5, min_count=1, workers=4)
-  model.save("word2vec.model")
+    from gensim.test.utils import common_texts
+    from gensim.models import Word2Vec
+    model = Word2Vec(sentences=common_texts, vector_size=100, window=5, min_count=1, workers=4)
+    model.save("word2vec.model")
 5. word2vec+[sentence2v]https://blog.csdn.net/promisejia/article/details/88364569）
 6. NLP预训练模型ElMo+迁移学习（https://zhuanlan.zhihu.com/p/62760251）
 7. [Bert](https://blog.csdn.net/jiaowoshouzi/article/details/89073944)
